@@ -1,27 +1,21 @@
-### Mongoose sample
+Follow these steps to get the application up and running:
 
-### Installation
-
-
-`npm install`
-
-### Running
-
-This example requires docker or a local mongodb installation.  If using a local mongodb, see `app.module.ts` for connection options, and make sure there are matching options for the mongodb installation and the source code.
-
-#### Docker
-
-There is a `docker-compose.yml` file for starting Docker.
-
-`docker-compose up`
-
-After running the sample, you can stop the Docker container with
-
-`docker-compose down`
-
-### Run the sample
-
-Then, run Nest as usual:
-
-`npm run start`
+1. Clone the Project
+2. Install Dependencies (npm install)
+3. Open the .env file and adjust the configurations accordingly.(DATABASE_URL)
+4. Add seed in mongodb (npm run seed)
+4. Start the Application (npm run start)
+5. open http://localhost:3000/doc
+    a. login 
+     - admin (email:pratik7601@gmail.com, password: abc)
+     - user (email:abc@gmail.com, password: abc)
+    b. copy bearer token and add/update on authorizations 
+    c Movies operation
+     - create movie (role:admin only)
+     - delete movie (role:admin only)
+     - update movie (role:admin only)
+     - search movie (all)
+     - get all movies (all)
+     
+6.Run Tests: npm run test
 

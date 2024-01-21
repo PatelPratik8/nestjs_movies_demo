@@ -16,7 +16,7 @@ async function bootstrap() {
     const hash = await bcrypt.hash(password, saltOrRounds);
     const user1 = authService.createUser(
       "Pratik",
-      "Pratik7601@gmail.com",
+      "pratik7601@gmail.com",
       hash,
       "admin"
     );

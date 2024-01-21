@@ -12,9 +12,11 @@ export class AuthService {
     @InjectModel(User.name) private readonly userModel: Model<User>
   ) {}
   async signIn(email: string, pass: string) {
-    const user = await this.userModel.findOne({ email }).exec();
+    const user = await this.userModel.findOne({ email }).exec();  
+    if (!user) {
+      throw new UnauthorizedException();
+    }
     const isMatch = await bcrypt.compare(pass,user?.password,);
-    console.log(isMatch,user?.password, pass);
     
     if (!isMatch) {
       throw new UnauthorizedException();

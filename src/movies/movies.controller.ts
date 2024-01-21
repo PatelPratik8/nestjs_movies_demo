@@ -79,6 +79,7 @@ export class MoviesController {
   }
 
   @Delete(":id")
+  @UseGuards(AuthGuard, RolesGuard)
   async delete(@Param("id") id: string) {
     const result = await this.moviesService.delete(id);
     if(result.deletedCount === 0)  throw new HttpException('movies not found.', HttpStatus.NOT_FOUND)
