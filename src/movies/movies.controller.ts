@@ -47,7 +47,6 @@ export class MoviesController {
   async update(@Body() updateMoviesDto: CreateMoviesDto,@Param("id") id: string) {
     // let movies = await this.moviesService.findOne(id)
     const result = await this.moviesService.update(id,updateMoviesDto);
-    console.log(result);
     if(result.matchedCount === 0)   throw new HttpException('movies not found.', HttpStatus.NOT_FOUND)
     return "update successfully"
   }
@@ -57,7 +56,6 @@ export class MoviesController {
   async searchAll(
     @Query() filter:searchAllFilterDTo
   ): Promise<PaginateResponse> {    
-    console.log(filter);
     const data = await this.moviesService.searchAll(filter);
     return paginateResponse(data,filter.limit);
   }
