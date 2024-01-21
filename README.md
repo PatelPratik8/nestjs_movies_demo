@@ -9,6 +9,7 @@ Follow these steps to get the application up and running:
     a. login 
      - admin (email:pratik7601@gmail.com, password: abc)
      - user (email:abc@gmail.com, password: abc)
+       
     b. copy bearer token and add/update on authorizations 
     c Movies operation
      - create movie (role:admin only)
