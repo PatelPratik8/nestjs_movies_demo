@@ -4,8 +4,8 @@ Follow these steps to get the application up and running:
 2. Install Dependencies (npm install)
 3. Open the .env file and adjust the configurations accordingly.(DATABASE_URL)
 4. Add seed in mongodb (npm run seed)
-4. Start the Application (npm run start)
-5. open http://localhost:3000/doc
+5. Start the Application (npm run start)
+6. open http://localhost:3000/doc
     a. login 
      - admin (email:pratik7601@gmail.com, password: abc)
      - user (email:abc@gmail.com, password: abc)
@@ -17,5 +17,5 @@ Follow these steps to get the application up and running:
      - search movie (all)
      - get all movies (all)
      
-6.Run Tests: npm run test
+7.Run Tests: npm run test
 
