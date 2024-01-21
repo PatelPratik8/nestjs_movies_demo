@@ -6,6 +6,7 @@ Follow these steps to get the application up and running:
 4. Add seed in mongodb (npm run seed)
 5. Start the Application (npm run start)
 6. open http://localhost:3000/doc
+   
     a. login 
      - admin (email:pratik7601@gmail.com, password: abc)
      - user (email:abc@gmail.com, password: abc)
