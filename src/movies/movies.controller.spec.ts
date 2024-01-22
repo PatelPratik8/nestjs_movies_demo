@@ -104,7 +104,7 @@ describe("MoviesController", () => {
       const result = await controller.update(mockUpdateMoviesDto, "a-id");
 
       expect(service.update).toHaveBeenCalledWith("a-id", mockUpdateMoviesDto);
-      expect(result).toEqual("update successfully");
+      expect(result.massage).toEqual("update successfully");
     });
 
     it("should update movie", async () => {
@@ -185,7 +185,7 @@ describe("MoviesController", () => {
       };
       jest.spyOn(service, "delete").mockResolvedValueOnce(deleteResult);
       const result = await controller.delete("a id");
-      expect(result).toEqual("movie delete successfully");
+      expect(result.massage).toEqual("movie delete successfully");
       expect(service.delete).toHaveBeenCalledWith("a id");
     });
   });
