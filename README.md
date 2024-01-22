@@ -16,8 +16,8 @@ Follow these steps to get the application up and running:
      - create movie (role:admin only)
      - delete movie (role:admin only)
      - update movie (role:admin only)
-     - search movie (all)
-     - get all movies (all)
+     - search movie (all) 
+     - get all movies (all) with cache
      
 7.Run Tests: npm run test
 
